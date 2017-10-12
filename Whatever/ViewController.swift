@@ -19,13 +19,13 @@ class ViewController: UIViewController
         newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha : CGFloat(1.0))
         return newColor
     }
+
     @IBOutlet weak var Button: UIButton!
     @IBAction func Click(_ sender: UIButton)
     {
         Button.backgroundColor = createRandomColor()
         view.backgroundColor = createRandomColor()
         Button.setTitleColor(createRandomColor(), for: .normal)
-        Button.
 //        if (Button.backgroundColor == .purple)
 //        {
 //            Button.backgroundColor = .orange
@@ -36,7 +36,14 @@ class ViewController: UIViewController
 //        }
         
     }
-
+    @IBOutlet var Counter: UILabel!
+    
+    @IBOutlet var stepper: UIStepper!
+    @IBAction func ChangeCounter(_ sender: UIStepper)
+    {
+        Counter.text = "/(stepper.value)"
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

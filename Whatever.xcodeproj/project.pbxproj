@@ -77,6 +77,9 @@
 		FA8E17C81F8D3CF9008EA990 /* Whatever */ = {
 			isa = PBXGroup;
 			children = (
+				FA8E17EB1F8D4E3C008EA990 /* Resources */,
+				FA8E17EA1F8D4E27008EA990 /* View */,
+				FA8E17E91F8D4E16008EA990 /* Controller */,
 				FA8E17C91F8D3CF9008EA990 /* AppDelegate.swift */,
 				FA8E17CB1F8D3CF9008EA990 /* ViewController.swift */,
 				FA8E17CD1F8D3CF9008EA990 /* Main.storyboard */,
@@ -94,6 +97,27 @@
 				FA8E17E01F8D3CF9008EA990 /* Info.plist */,
 			);
 			path = WhateverTests;
+			sourceTree = "<group>";
+		};
+		FA8E17E91F8D4E16008EA990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA8E17EA1F8D4E27008EA990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA8E17EB1F8D4E3C008EA990 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

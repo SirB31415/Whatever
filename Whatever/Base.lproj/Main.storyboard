@@ -23,15 +23,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="ChangeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnm-tC-5Dr"/>
                                     <action selector="Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CfW-ey-QEx"/>
                                 </connections>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" wraps="YES" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="9b1-cQ-L1W">
+                                <rect key="frame" x="140" y="415" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ChangeCounter:" destination="BYZ-38-t0r" eventType="valueChanged" id="18d-BJ-W2Z"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19U-4t-yvm">
+                                <rect key="frame" x="166" y="226" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Button" destination="rBa-uS-P41" id="4ob-oJ-00F"/>
+                        <outlet property="Counter" destination="19U-4t-yvm" id="sSX-Mq-9gp"/>
+                        <outlet property="stepper" destination="9b1-cQ-L1W" id="n7f-mG-aeh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
