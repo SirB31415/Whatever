@@ -8,7 +8,13 @@
 
 import UIKit
 
-public class SecondStringController : UIViewController
+public class SecondScreenController : UIViewController
 {
+    private lazy var color : ColorTools = ColorTools()
     
+    public override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        view.backgroundColor = color.createRandomColor()
+    }
 }

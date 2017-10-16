@@ -10,22 +10,16 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    private func createRandomColor() -> UIColor
-    {
-        let newColor : UIColor
-        let redValue : CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue : CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
-        let blueValue : CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
-        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha : CGFloat(1.0))
-        return newColor
-    }
-
+   
+    private lazy var colorTool : ColorTools = ColorTools()
     @IBOutlet weak var Button: UIButton!
+    
     @IBAction func Click(_ sender: UIButton)
     {
-        Button.backgroundColor = createRandomColor()
-        view.backgroundColor = createRandomColor()
-        Button.setTitleColor(createRandomColor(), for: .normal)
+
+        Button.backgroundColor = colorTool.createRandomColor()
+        view.backgroundColor = colorTool.createRandomColor()
+        Button.setTitleColor(colorTool.createRandomColor(), for: .normal)
 //        if (Button.backgroundColor == .purple)
 //        {
 //            Button.backgroundColor = .orange
